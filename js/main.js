@@ -59,7 +59,9 @@ console.log(frase.toLowerCase());
 
 */
 
+/*
 // criando array 
+
 
 var lista = ["maçã","pêra","laranja"];
 console.log(lista);
@@ -120,10 +122,44 @@ var frutas = [{nome:"maçã", cor:"vermelha", tamanho:"pequeno"},{nome:"uva", co
 console.log(frutas);
 console.log(frutas[2].nome,frutas[1].cor,frutas[0].tamanho);
 
+*/
+
+// condição Se e senão
+
+// para solicitar o LEIA ao usuario use o prompt, é um alert que recebe dado do usuário
+
+var idade = prompt("Qual a sua idade ?");
+    if(idade >= 18){
+        alert("Maior de idade");
+    }   else{
+            alert("Menor de idade");
+        };
 
 
+// Laços de repetição
+
+//Enquanto, Faça - While
+
+var count = 0;
+        while (count <=5) {
+            console.log(count);
+            count++;
+        };
 
 
+// Para - For
+
+var count;
+        for (count=0; count <=5; count++) {
+            alert(count);
+        };
 
 
+// Data atual
 
+var d = new Date();
+        alert(d);
+        alert(d.getDay() + "Dia");
+        alert(d.getMonth() + "Mês");
+        alert(d.getHours() + "Horas");
+        alert(d.getFullYear() + "Ano");
