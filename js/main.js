@@ -128,6 +128,8 @@ console.log(frutas[2].nome,frutas[1].cor,frutas[0].tamanho);
 
 // para solicitar o LEIA ao usuario use o prompt, é um alert que recebe dado do usuário
 
+/*
+
 var idade = prompt("Qual a sua idade ?");
     if(idade >= 18){
         alert("Maior de idade");
@@ -163,3 +165,47 @@ var d = new Date();
         alert(d.getMonth() + "Mês");
         alert(d.getHours() + "Horas");
         alert(d.getFullYear() + "Ano");
+
+*/
+
+//Criando funções
+
+
+function soma(n1, n2) {
+    return n1 + n2;
+
+};
+alert (soma(5,10));
+console.log(soma(2,7));
+
+
+
+function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome);
+}
+
+alert (setReplace("Vai Japão", "Japão", "Brasil"));
+console.log(setReplace("Los Hermanos", "Hermanos", "Brazucas"));
+
+
+//Variavéis Global e Local
+
+var validar = 0; // variavel global, mas a função só vai pegar esse se tiver declarado no global e no local
+
+function validaidade(idade){
+    var validar; // variavel local que esta dentro da função
+        if (idade >= 18) {
+            validar = true;
+        } else {
+            validar = false;
+        }
+        return validar;
+};
+
+alert(validaidade(19));
+console.log(validaidade(15));
+
+alert(validaidade(prompt("Digite a sua idade: "))); //chamada para o usuario digitar um valor
+console.log(validar);
+
+
