@@ -170,6 +170,7 @@ var d = new Date();
 
 //Criando funções
 
+/*
 
 function soma(n1, n2) {
     return n1 + n2;
@@ -207,5 +208,63 @@ console.log(validaidade(15));
 
 alert(validaidade(prompt("Digite a sua idade: "))); //chamada para o usuario digitar um valor
 console.log(validar);
+
+*/
+
+
+//Manipulando elementos na página
+
+function botao(){
+    alert("Obrigado por clicar no botão!"); 
+    //usando o DOM e o innerHTML para injetar qualquer coisa no html
+    document.getElementById("agradecimento").innerHTML = "<b>abra uma nova janela</b>";
+    document.getElementById("agradecimento2").innerHTML = "<p><b>abra na mesma janela<p><b>";
+}
+
+//redirecionando para outra página
+
+function redirecionar(){
+    //uma nova janela
+    window.open("http://www.google.com");
+
+
+}
+
+function redirecionar2(){
+    window.location.href = "http://www.google.com";
+
+}
+
+function trocar(){
+    alert("obrigado por passar o mouse");
+
+    document.getElementById("mousemove").innerHTML = "<i>Obrigado por passar o mouse</i>";
+}
+
+
+function trocar2(){
+    document.getElementById("mousevolta").innerHTML = "<h1>Mudança para a tag h1</h1>";
+}
+function voltar(){
+    document.getElementById("mousevolta").innerHTML = "Estado normal";
+}
+
+function load(){
+    alert("Página Carregada");
+}
+
+function funcaochange(elemento){
+    console.log(elemento.value);
+}
+
+
+
+
+
+
+
+
+
+
 
 

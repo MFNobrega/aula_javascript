@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+
         <title>Minha Página</title>
         <meta charset="utf-8">
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-        
+
+    <!-- usando o onload no body Mensagem de pagina carregada-->
+    <body onload="load()">
+
+        <!-- onclick ação quando é clicado o botão -->
+        <button type="button" onclick="botao()">Clique Aqui</button>
+
+        <!-- redirecionando para outra página-->
+        <p id="agradecimento" onclick="redirecionar()"></p>
+
+        <p id="agradecimento2" onclick="redirecionar2()"></p>
+
+        <!-- usando o onmouseover quando passa o mouse em cima do elemento na página-->
+        <p id="mousemove" onmouseover="trocar()">Passe o mouse aqui</p>
+
+        <!-- quando vc passa o mouse no elemento ele muda, mas quando vc tira o mouse ele volta ao estado anterior-->
+        <p id="mousevolta" onmouseover="trocar2()" onmouseout="voltar()">Passe o mouse e ele vai mudar, tira o mouse ele volta ao normal</p>
+
+
+        <!-- usando o onchange como menu de opções que pode ser salvo o resultado-->
+        <select onchange="funcaochange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+
     </body>
 
 </html>
